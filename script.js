@@ -1,5 +1,4 @@
-var character = 
-document.getElementById("character");
+var character = document.getElementById("character"); //character variable initialized
 
 var block = document.getElementById('block');
 
@@ -12,6 +11,9 @@ function jump(){
      },500)
 }
 
+// the code block above intitiates the jump animation class as soon as the function 
+// is called.
+
 var checkDead = setInterval (function(){
             var characterTop = 
             parseInt(window.getComputedStyle(character).getPropertyValue("top"));
@@ -23,3 +25,7 @@ var checkDead = setInterval (function(){
                     alert("u lose.");
                 }
         },10);
+        
+// The checkdead codeblock checks the position of the character and block. 
+// This will let the player know when to stop or start. 
+// PS It's all about logic
